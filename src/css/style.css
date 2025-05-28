@@ -88,6 +88,7 @@ input{
 }
 .voice:active{
     background: #D3D3D3;
+    transform: scale(1.05);
 }
 .profile, .notification{
     height: 40px;
@@ -112,6 +113,7 @@ input{
 }
 .add:active{
     background: #D3D3D3;
+    transform: scale(1.05);
 }
 .media{
     margin-top: 20px;
@@ -181,7 +183,7 @@ input{
     color: black;
 }
 .subscribe:active{
-    background: black;
+    transform: scale(1.05);
 }
 .advice{
     display: flex;
@@ -196,6 +198,7 @@ input{
 }
 .dots:active{
     background: #D3D3D3;
+    transform: scale(1.05);
 }
 .save{
     padding: 0 10px;
@@ -223,6 +226,7 @@ input{
 }
 .save:active{
     background: #D3D3D3;
+    transform: scale(1.05);
 }
 .share{
     padding: 0 10px;
@@ -236,6 +240,7 @@ input{
 }
 .share:active{
     background: #D3D3D3;
+    transform: scale(1.05);
 }
 .popular{
     border-radius: 30px;
@@ -267,9 +272,11 @@ input{
 }
 .like:active{
     background: #D3D3D3;
+    transform: scale(1.05);
 }
 .dislike:active{
     background: #D3D3D3;
+    transform: scale(1.05);
 }
 .card{
     display: flex;
@@ -322,6 +329,7 @@ input{
     font-size: 18px;
 }
 .sidebar{
+    padding: 0 20px;
     position: fixed;
     top: 0;
     left: -250px;
@@ -336,7 +344,6 @@ input{
 .sidebar__head{
     display: flex;
     align-items: center;
-    padding-left: 20px;
 }
 .voice__click{
     position: fixed;
@@ -347,6 +354,7 @@ input{
     height: 350px;
     background: #fff;
     transition: .3s;
+    border: 1px solid black;
 }
 .voice__click.active{
     top: 170px;
@@ -381,6 +389,162 @@ input{
     opacity: 1;
     pointer-events: all;
 }
+.notification__click{
+    position: fixed;
+    top: 155px;
+    left: 86%;
+    width: 500px;
+    height: 620px;
+    transition: .3s;
+    transform: translate(-72%, -16%);
+    border-radius: 12px;    
+    opacity: 0;
+    pointer-events: none;
+    background: #fff;    
+}
+.notification__click.active{
+    border: 1px solid black;
+    opacity: 1;
+    pointer-events: all;
+}
+.profile__click{
+    position: fixed;
+    top: 155px;
+    left: 86%;
+    width: 330px;
+    height: 700px;
+    transition: .3s;
+    transform: translate(-25%, -15%);
+    border-radius: 12px;    
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid black;
+    background: #fff;    
+}
+.profile__click.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.sidebar__body{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sidebar__types{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    height: 40px;
+}
+.sidebar__types:hover{
+    background: #f2f2f2;
+}
+.sidebar__text{
+    font-family: "Roboto";
+    font-weight: 500;
+}
+.sidebar__upper{
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #606060;
+}
+.voice__head{
+    font-size: 27px;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding: 0 30px;
+}
+.voice__body{
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.voice__btn{
+    margin-top: 80px;
+    width: 70px;
+    height: 70px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    padding: 10px;
+}
+.voice__center{
+    display: flex;
+    justify-content: center;
+}
+.voice__img{
+    width: 100%;
+}
+.voice__btn:active{
+    background: #D3D3D3;
+    transform: scale(1.05);
+}
+.add__main{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0 16px;
+    height: 45px;
+    width: 100%;
+}
+.notification__head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+}
+.notification__head:hover{
+    background: #D3D3D3;
+}
+.notification__profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.notification__text{
+    font-size: 20px;
+}
+.notification__icon{
+    width: 60px;
+    height: 60px;
+}
+.hanson__icon{
+    width: 100%;
+    border-radius: 50%;
+}
+.notification__big{
+    font-size: 18px;
+    font-weight: 500;
+}
+.img__sml{
+    width: 22%;
+    border-radius: 12px;
+}
+.dots__click{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 94%;
+    left: 68%;
+    background: white;
+    width: 200px;
+    height: 50px;
+    transition: .3s;
+    border-radius: 12px;    
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid black;
+}
+.dots__click.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.dots__click:hover{
+    background: #D3D3D3;
+}
+
 
 
 
