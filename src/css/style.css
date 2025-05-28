@@ -260,11 +260,13 @@ input{
     display: flex;
     align-items: center;
     gap: 10px;
+    background: #f8f8f8;
 }
 .dislike{
     width: 60px;
     padding: 15px;
     border-radius: 0 30px 30px 0;
+    background: #f8f8f8;
 }
 .bring{
     width: 100%;
@@ -377,7 +379,7 @@ input{
     left: 96%;
     width: 220px;
     transform: translate(-70%, -70%);
-    height: 150px;
+    height: 137px;
     background: #fff;
     transition: .3s;
     border-radius: 12px;
@@ -396,8 +398,8 @@ input{
     width: 500px;
     height: 620px;
     transition: .3s;
-    transform: translate(-72%, -16%);
-    border-radius: 12px;    
+    transform: translate(-62%, -16%);
+    border-radius: 0 0 12px 12px;    
     opacity: 0;
     pointer-events: none;
     background: #fff;    
@@ -487,6 +489,10 @@ input{
     padding: 0 16px;
     height: 45px;
     width: 100%;
+    border-radius: 12px;
+}
+.add__main:hover{
+    background: #D3D3D3;
 }
 .notification__head{
     display: flex;
@@ -526,7 +532,7 @@ input{
     align-items: center;
     padding: 10px;
     position: fixed;
-    top: 94%;
+    top: 70%;
     left: 68%;
     background: white;
     width: 200px;
