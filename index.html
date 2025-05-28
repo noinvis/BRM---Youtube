@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="shortcut icon" href="./src/img/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body class="container">
+    <div class="add__click "></div>
+    <div class="voice__click ">
+        <div class="voice__main">
+            <div class="flex"></div>
+            <button onclick="closeVoice()" class="voice__close">
+                <div class="flex"></div>
+                <img src="./src/img/close.png" alt="" class="close__img">
+            </button>
+        </div>
+    </div>
+    <div class="sidebar ">
+        <div class="sidebar__head">
+            <button onclick="showSidebar()">
+                <img src="./src/img/yt-icon-button.svg" alt="">
+            </button>
+            <img src="./src/img/ytd-topbar-logo-renderer.svg" alt="">
+        </div>
+    </div>
+    <header class="header">
+        <div class="start">
+            <button onclick="showSidebar()">
+                <img src="./src/img/yt-icon-button.svg" alt="">
+            </button>
+            <img src="./src/img/ytd-topbar-logo-renderer.svg" alt="">
+        </div>
+        <div class="mid">
+            <div class="inp">
+                <div class="input">
+                    <input type="text" placeholder="Search" class="search">
+                </div>
+                <button class="find">
+                    <img src="./src/img/yt-icon → SVG.svg" alt="">
+                </button>
+            </div>
+            <button onclick="clickVoice()" class="voice">
+                <img src="./src/img/voice.png" alt="">
+            </button>
+        </div>
+        <div class="last">
+            <button onclick="showAdd()">
+                <div class="add">
+                    <img src="./src/img/plus.png" alt="" class="plus">
+                    <p>Создать</p>
+                </div>
+            </button>
+            <div class="notification">
+                <img src="./src/img/notification.png" alt="" class="note">
+            </div>
+            <div class="profile">
+                <img src="./src/img/Hanson.jpg" alt="" class="hanson">
+            </div>
+        </div>
+    </header>
+    <main class="media">
+        <section class="media__main">
+            <div class="media__video">
+                <div class="video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pXoPh2rZQBU" title="Javascipt string methods haqida batafsil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="media__body">
+                    <p class="media__head">Javascipt string methods haqida batafsil</p>
+                    <div class="channel">
+                        <div class="channel__about">
+                            <img src="./src/img/brm.png" alt="" class="brm">
+                            <div class="text__grid">
+                                <p class="text__name">Boburmirzo  B R M</p>
+                                <p class="text__subs">115 подписчиков</p>
+                            </div>
+                            <button class="subscribe">Subscribe</button>
+                        </div>
+                        <div class="advice">
+                            <div class="popular">
+                                <button onclick="inc()" class="like">
+                                    <img src="./src/img/like.png" alt="" class="bring">
+                                    <p class="btn__text">53</p>
+                                </button>
+                                <div class="line"></div>
+                                <button class="dislike">
+                                    <img src="./src/img/dislike.svg" alt="" class="bring">
+                                </button>
+                            </div>
+                            <button class="share">
+                                <div class="share__img">
+                                    <img src="./src/img/share1-svgrepo-com.svg" alt="" class="bring">
+                                </div>
+                                <p class="btn__text">Поделиться</p>
+                            </button>
+                            <button class="save">
+                                <div>
+                                    <img src="./src/img/download-svgrepo-com.svg" alt="" class="download">
+                                </div>
+                                <p class="btn__text">Скачать</p>
+                            </button>
+                            <button class="dots">···</button>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <p class="head__main">318 просмотров  1 год назад</p>
+                        <p class="head__mb">Javascipt string methods haqida batafsil</p>
+                        <p class="head__style">toUpperCase - harflarni kattaga o'tkizadi </p> <p>toLowerCase - harflarni kichikka o'tkizadi concat - stringlarni birlashtiradi</p>
+                        <p>repeat - stringni qaytaradi...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link.svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">On Cam: Putin Speaks In German In Meeting, Stuns…</p>
+                        <p class="text__body">Hindustan Times</p>
+                        <div class="text__flex">
+                            <p class="text__body">1.8M views </p>
+                            <p class="text__body">• 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (1).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">10 Times Tom Cruise OUTSMARTED Rude…</p>
+                        <p class="text__body">WokeWatch</p>
+                        <div class="text__flex">
+                            <p class="text__body">412K views </p>
+                            <p class="text__body">• 7 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (2).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">Putin and Xi make pancakes | VOANews</p>
+                        <p class="text__body">Voice of America</p>
+                        <div class="text__flex">
+                            <p class="text__body">23M views </p>
+                            <p class="text__body">• 6 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (3).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">The Quran & Gaza's Destiny by Sheikh Imran Hosein | IMRAN…</p>
+                        <p class="text__body">Muslim Christian Alliance</p>
+                        <div class="text__flex">
+                            <p class="text__body">123K views </p>
+                            <p class="text__body">• 2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (4).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">The rise of Xi Jinping, explained</p>
+                        <p class="text__body">Vox</p>
+                        <div class="text__flex">
+                            <p class="text__body">11M views </p>
+                            <p class="text__body">• 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (5).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">Khabib meets Putin after McGregor victory</p>
+                        <p class="text__body">The Sun</p>
+                        <div class="text__flex">
+                            <p class="text__body">11M views  </p>
+                            <p class="text__body">• 6 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (6).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">Robot Movie Best scene | Enthiran | Aishwarya |…</p>
+                        <p class="text__body">MK Media</p>
+                        <div class="text__flex">
+                            <p class="text__body">10M views </p>
+                            <p class="text__body">2 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (7).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">India vs Pakistan 2016 T20 World Cup 2016 Match HD…</p>
+                        <p class="text__body">Cricket Hub</p>
+                        <div class="text__flex">
+                            <p class="text__body">3.3M views </p>
+                            <p class="text__body">• 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (8).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">Saudi Crown Prince interview with Fox News</p>
+                        <p class="text__body">Al Arabiya English</p>
+                        <div class="text__flex">
+                            <p class="text__body">3.7M views </p>
+                            <p class="text__body">• 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <img src="./src/img/ytd-thumbnail → Link (9).svg" alt="" class="proc">
+                    </div>
+                    <div class="rec__text">
+                        <p class="text__head">Full argument: Trump-Zelensky White House meeting descend…</p>
+                        <p class="text__body">The Telegraph</p>
+                        <div class="text__flex">
+                            <p class="text__body">7.9M views </p>
+                            <p class="text__body">• 2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
